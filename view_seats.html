@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Allocated Seats</title>
+</head>
+<body>
+    <h1>Allocated Seats</h1>
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Reg No</th><th>Name</th><th>Subject</th>
+            <th>Hall</th><th>Row</th><th>Column</th>
+        </tr>
+        {% for row in data %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+            <td>{{ row[4] }}</td>
+            <td>{{ row[5] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/">Back</a>
+</body>
+</html>
